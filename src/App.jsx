@@ -1,12 +1,12 @@
+import { Outlet } from 'react-router-dom';
 import './App.css'
-import Spotify from './components/Spotify';
-import Tmdb from './components/Tmdb';
+import Home from './components/Home';
 
 
 function App() {
   return <>
-   <Spotify/>
-   <Tmdb/>
+   <Home/>
+   <Outlet/>
   </>
 }
 

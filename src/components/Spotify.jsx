@@ -39,7 +39,7 @@ const Spotify = () => {
       <div className="music-card" key={index}>
         <img src={musicData?.data?.image?.largeImageUrl} alt="pics" />
         <h2>{albumData?.date?.year}</h2>
-        <h2>{musicData?.data?.displayName}</h2>
+        <h2>{albumData?.name}</h2>
       </div>
     );
   })}
