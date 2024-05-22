@@ -11,12 +11,15 @@ import {
 
 import Tmdb from './components/Tmdb.jsx';
 import Spotify from './components/Spotify.jsx';
+import Newsboard from './components/News/Newsboard.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route index element={<Tmdb />} />
+      <Route index element={<Newsboard />} />
       <Route path="/Spotify" element={<Spotify />} />
+      <Route path="/Tmdb" element={<Tmdb />} />
+      <Route path="/News" element={<Newsboard />} />
       
     </Route>
   )
