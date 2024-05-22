@@ -8,7 +8,7 @@ const Newsboard = () => {
   useEffect(() => {
     let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${import.meta.env.VITE_API_KEY}`;
     fetch(url).then(response=> response?.json()).then(data=>setArticles(data?.articles));
-    
+    //deployed version cant call api , api calls only through local host
   }, [])
   
   return (
