@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 
 
-const Home = (setCategory) => {
+const Home = () => {
   
   return (
     <div>
